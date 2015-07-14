@@ -1,0 +1,1555 @@
+@font-face {
+    font-family: 'MuseoSans300';
+    src: url('./fonts/museosans-300.eot');
+    src: url('./fonts/museosans-300.eot') format('embedded-opentype'),
+         url('./fonts/museosans-300.woff') format('woff'),
+         url('./fonts/museosans-300.ttf') format('truetype'),
+         url('./fonts/museosans-300.svg#MuseoSans300') format('svg');
+}
+@font-face {
+    font-family: 'MuseoSans500';
+    src: url('./fonts/museosans-500.eot');
+    src: url('./fonts/museosans-500.eot') format('embedded-opentype'),
+         url('./fonts/museosans-500.woff') format('woff'),
+         url('./fonts/museosans-500.ttf') format('truetype'),
+         url('./fonts/museosans-500.svg#MuseoSans300') format('svg');
+}
+@font-face {
+    font-family: 'MuseoSans700';
+    src: url('./fonts/museosans-700.eot');
+    src: url('./fonts/museosans-700.eot') format('embedded-opentype'),
+         url('./fonts/museosans-700.woff') format('woff'),
+         url('./fonts/museosans-700.ttf') format('truetype'),
+         url('./fonts/museosans-700.svg#MuseoSans300') format('svg');
+}
+@font-face {
+    font-family: 'liberation_serifitalic';
+    src: url('./fonts/liberationserif-italic-webfont.eot');
+    src: url('./fonts/liberationserif-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/liberationserif-italic-webfont.woff') format('woff'),
+         url('./fonts/liberationserif-italic-webfont.ttf') format('truetype'),
+         url('./fonts/liberationserif-italic-webfont.svg#liberation_serifitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* TEMPLATE GENERAL 
+***************************************/
+
+body { color: #292929; font-family: 'MuseoSans300'; overflow-x: hidden; }
+
+
+body > header {
+	background: #292929;
+	color: #fff;
+	font-size: 18px;
+	height: 115px;
+	position: relative;
+	top: 0;
+	width:100%;
+	z-index:100;
+}
+	body > header a.home {
+		float: left;
+		margin: 25px 0 0 0;
+		width: 220px;
+		transition: all 0.3s ease 0s;
+	}
+	body > header nav {
+		padding: 25px 0 0 10px;
+		float: right;
+	}
+	body > header.sticky nav { margin: 0 }
+		body > header nav ul li {
+			float: left;
+			padding-top: 14px;
+			padding-bottom: 23px;
+		}
+		body .menu_fixe nav ul li:hover, body .menu_fixe nav ul li.active,
+		body > header nav ul li:hover, body > header nav ul li.active { border-bottom: 7px solid #7376a7 }
+		body .menu_fixe nav ul li:first-child,
+		body > header nav ul li:first-child { display:  none } 
+			body .menu_fixe nav ul li a,
+			body > header nav ul li a {
+				color: #fff;
+			}
+		
+	body > header .social {
+		float: right;
+		margin: 40px 0px 0 0;
+	}
+	body > header .social a {
+		float: left;
+		margin: 0 0 0 10px;
+	}		
+	body > header .contact a {
+		margin: 40px 0px 0 0;
+	}	
+	
+body .menu_fixe { 
+	background: #292929;
+	color: #fff;
+	font-size: 18px;
+	height: 80px; 
+	position: fixed; 
+	top: -80px; 
+	transition: all 0.3s ease 0s;
+	width: 100%;
+	z-index:9999;
+}
+	body .menu_fixe a.home {
+		display: block;
+		float: left;
+		margin: 8px 0 0 0;
+		overflow: hidden;
+		transition: all 0.3s ease 0.2s;
+		width: 60px
+	}
+	body > header .menu_mobile,
+	body .menu_fixe .menu_mobile {
+		display: none;
+	}
+	body .menu_fixe nav {
+		margin: 0 0 0 10px;
+		float: right;
+	}
+		body .menu_fixe nav ul li {
+			float: left;
+			padding-top: 14px;
+			padding-bottom: 13px;
+		}
+		body .menu_fixe .social {
+			float: right;
+			margin: 20px 0px 0 0;
+		}
+		body .menu_fixe .social a {
+			float: left;
+			margin: 0 0 0 10px;
+		}		
+		body .menu_fixe .contact a {
+			margin: 40px 0px 0 0;
+		}	
+	
+
+#bandeau-contact {
+	background: url('../images/bg_footer.jpg') no-repeat 50% 0;
+	height: 570px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}	
+	#bandeau-contact .logo-big {
+		background: url('../images/logo_big.png') center center no-repeat;
+		bottom: 0;
+		height: 812px;
+		left: 50%;
+		margin: -406px 0 0 -406px;
+		position: absolute;
+		width: 812px;
+		top: 50%;
+		z-index: 9
+	}
+	#bandeau-contact .custom {
+		margin: 100px 0 0 0;
+		position: relative;
+		z-index: 10
+	}
+		#bandeau-contact p:first-child {
+			color: #fff;
+			padding: 65px 0 20px 0;
+			font-family: 'liberation_serifitalic';
+			font-size: 46px;
+		}
+		#bandeau-contact a {
+			text-transform: none
+		}
+
+#liens {
+	background: url('../images/bg_footer_link.png');
+	color: #fff;
+}
+	#liens a {
+		color: #fff;
+		font-size: 13px;
+	}
+	#liens .netlinking {
+		line-height: 24px;
+	}
+	#liens .menu {
+		text-align: center;
+		margin: 30px 0;
+	}
+		#liens .menu li {
+			display: inline-block;
+		}
+			#liens .menu li a {
+				color: #66cccc;
+				font-size: 16px;
+				margin: 0 15px;
+			}
+
+/* Contenu 
+************/			
+#contenu {
+	font-size: 16px;
+	padding:0;
+}
+	#contenu  header h1, #contenu .blog-article h1 {
+		color: #ccc;
+		font-family: 'MuseoSans700';
+		font-size: 48px;
+		margin: 25px 0 0 0;
+		text-align: center;
+	}
+	#contenu .blog-article h1 {
+		font-size:39px;
+	}	
+	#contenu nav {
+		text-align: center;
+		margin:  20px 0 10px 0;
+	}
+	#contenu .menu {
+		border-bottom: 6px solid #d4d4d4;
+		margin: 0 auto;
+		padding: 0;
+	}
+		#contenu .menu li {
+			display: inline-block;
+		}
+		#contenu .menu li.divider { display: none }
+			#contenu .menu li a {
+				color: #666;
+				display: block;
+			}
+			#contenu .menu:not(.nav) li a {
+				padding: 10px;
+			}
+		#contenu .menu li.current,
+		#contenu .menu li:hover{
+			background: #d4d4d4;	
+			display: inline-block;
+		}
+			#contenu .menu li.current a, 
+			#contenu .menu li:hover a  {
+				color: #292929;
+				text-decoration: none;
+			}
+	#contenu p{
+		margin:0 0 25px;
+	}	
+	#contenu h2 {
+		font-family: 'liberation_serifitalic';
+		font-size: 30px;
+		margin: 20px 0 25px 0;
+		text-align: center;
+		color: #292929;
+	}
+	#contenu .blogpage .col-lg-6 h2 {
+		font-size: 24px;		
+	}
+	#contenu h3 {
+		font-family: 'MuseoSans500';
+		font-size: 22px;
+		margin-bottom: 25px;
+	}
+	#contenu a {
+		color: #7376a7
+	}
+	#contenu img.round {
+		display: block;
+		margin: 20px auto;
+		max-width: 100%;
+		border-radius: 50%;
+	}
+	#contenu .googlemap iframe {
+		width: 100%
+	}
+
+@media (max-width: 1200px) {
+	body > header {
+		color: #fff;
+		font-size: 18px;
+		height: 167px;
+	}
+		body > header nav {
+			clear: both;
+			float: left;
+			padding: 5px 0 0 10px;
+		}
+			body > header nav ul li {
+				float: left;
+				margin: 0 22px;
+				padding-top: 15px;
+				padding-bottom: 10px;
+			}
+
+	body .menu_fixe {
+		height: 150px;
+		top: -150px; 
+	}
+	body .menu_fixe nav {
+		clear: both;
+		float: left;
+		margin: 5px 0 0 10px;
+	}
+		body .menu_fixe nav ul li {
+		float: left;
+		margin: 0 22px;
+		padding-bottom: 10px;
+		padding-top: 15px;
+	}
+}
+			
+@media (max-width: 992px) {
+	body .menu_fixe nav ul li {
+		margin: 0 4px;
+	}
+	body .menu_fixe {
+		top: -416px; 
+	}
+		body > header nav ul li {
+			margin: 0 7px
+		}
+	.flex-direction-nav { display: none }
+}
+
+@media (max-width: 768px) {
+	body > header {
+		box-shadow: 0 0 20px 0 #333;
+		color: #fff;
+		font-size: 18px;
+		height: auto;
+	}
+		body > header a.home {
+			margin: 10px 0;
+			padding-left: 10px;
+		}
+		body .menu_fixe .container,
+		body > header .container {
+			padding: 0;
+		}
+		body .menu_fixe nav,
+		body > header nav {
+			height: 0;
+			overflow: hidden;
+			padding: 0;
+			text-align: center;
+			transition: all 0.3s ease 0s;
+			width: 100%;
+		}
+		body .menu_fixe nav.open,
+		body > header nav.open { height: 400px; padding: 40px 0 30px 0 }
+		body > .menu_fixe.open + header .social { display: block; }
+		body > .menu_fixe.open + header .social a { display: none; }
+		body > .menu_fixe.open + header .social a.bt-contact { display: block; }
+			body > header nav ul {
+				position: relative;
+			}
+		body > header .social {
+			display: none;
+			margin: 40px 0 0 0;
+			text-align: center;
+		}
+		body > header .social a {
+			float: none;
+		}
+			body .menu_fixe nav {
+				clear: both;
+				float: none;
+			}
+			body .menu_fixe .menu_mobile,
+			body > header .menu_mobile {
+				border: 2px solid #fff;
+				border-radius: 5px;
+				display: block;
+				float: right;
+				margin: 20px 20px 0 0;
+				padding: 2px 2px 3px 2px;
+			}
+			body .menu_fixe nav ul li,
+			body > header nav ul li {
+				border-bottom: 1px solid #ddd;
+				display: block;
+				float: none;
+				padding: 0 0 0 60px;
+				text-align: left;
+			}
+			body .menu_fixe nav ul li:hover, body .menu_fixe nav ul li.active, 
+			body > header nav ul li:hover, body > header nav ul li.active { border-bottom: 1px solid #ddd }
+			body > header nav ul li:last-child { border: 0 }
+			
+	body .menu_fixe {
+		height: auto;
+	}	
+		body .menu_fixe a.home {
+			margin: 10px 0;
+		}	
+		body .menu_fixe .social a {
+			display: none;
+		}
+		body > header .social .bt-contact,
+		body .menu_fixe.open .social .bt-contact {
+			bottom: 20px;
+			display: block;
+			left: 0;
+			margin-left: 5%;
+			position: absolute;
+			width: 90%;
+		}
+		
+
+	#liens {
+		text-align: center
+	}
+		#liens h3 {
+			margin: 20px 0 0 0
+		}
+}
+
+@media (max-width: 510px) {
+	body > header {
+		box-shadow: 0 0 20px 0 #333;
+		color: #fff;
+		font-size: 18px;
+	}
+		body > header nav {
+			width: 100%;
+		}
+		body > header .social {
+			float: none;
+			margin: 40px 0 0 0;
+			text-align: center;
+		}
+		body > header .social a {
+			float: none;
+		}
+			body > header nav ul li:hover, body > header nav ul li.active { border-bottom: 1px solid #ddd }
+			body > header nav ul li:last-child { border: 0 }
+}
+	
+/* ACCUEIL
+***************************************/	
+	
+#slider {
+	background : url('../images/bg_slider.jpg') no-repeat top center;
+	position: relative;
+	min-height:550px;
+}
+	#slider .flexslider {
+		margin: 20px 0 -65px 0;
+	}
+		#slider .slide-desc {
+			padding-top: 80px;
+		}
+			#slider .slide-desc h3{
+				color: #fff;
+				font-family: 'MuseoSans700';
+				font-size: 36px;
+			}
+			#slider .slide-desc p {
+				color: #fff;
+				font-family: 'MuseoSans500';
+				font-size: 16px;
+				line-height: 20px;
+				text-align: left;
+				margin-bottom:20px;
+			}
+			#slider .slide-desc a {
+				border: 2px solid #fff;
+				width: auto;
+				font-family: 'MuseoSans500';
+			}
+			#slider .slide-img img { 
+				margin-top: 45px;
+			}
+
+#agence { 
+	text-align: center;
+}
+	#agence h1 {
+		color: #7b61a1;
+		font-family: "MuseoSans700";
+		font-size: 48px;
+		padding: 15px 0;
+	}
+	#agence p.desc {
+		font-family: 'liberation_serifitalic';
+		font-size: 24px;
+		margin: 0 0 20px 0
+	}
+	#agence p a {
+		margin: 0 5px;
+	}
+
+#domaines {
+	background: url('../images/sep.png') no-repeat top center;
+	text-align: center;
+	margin: 25px 0 0 0;
+	padding: 30px 0 0 0; 
+}
+	#domaines img {
+		margin: 45px 0 0 0;
+		border-radius: 50%;
+		box-shadow: 0 0 0 5px #fff inset;
+		margin: 15px 0 0;
+		transition: all 0.3s ease 0s;
+		padding: 0px;
+	}
+		#domaines img {  }
+		#domaines .bleu img:hover{ box-shadow: 0 0 0 5px #7ab5ba inset; margin: 5px 0 -10px 0; padding: 10px }
+		#domaines .jaune img:hover { box-shadow: 0 0 0 5px #eabf4c inset; margin: 5px 0 -10px 0; padding: 10px }
+		#domaines .vert img:hover { box-shadow: 0 0 0 5px #79aa9a inset; margin: 5px 0 -10px 0; padding: 10px }
+		#domaines .violet  img:hover { box-shadow: 0 0 0 5px #757aaa inset; margin: 5px 0 -10px 0; padding: 10px }
+	#domaines h3 {
+		color: #333333;
+		font-family: "MuseoSans500";
+		font-size: 22px;
+		margin: 30px 0 25px 0;
+	}
+	#domaines p {
+		padding: 0px;
+		font-size:18px;
+	}
+	
+#presta {
+	background: #757aaa;
+	color: #fff;
+	margin: 30px 0 0 0;
+	text-align: left;
+}
+	#presta .mask {
+		display: block;
+		height: 176px;
+		margin: 40px 0 0 0;
+		overflow: hidden;
+		width: 263px;
+	}
+		#presta .mask img {
+			opacity: 0.7;
+			transition: all 0.5s;
+		}
+		#presta .mask:hover img {
+			-webkit-transform: scale(1.2);
+			-moz-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			transform: scale(1.2);
+			opacity: 1;
+		}
+	#presta h3 {
+		font-family: "MuseoSans500";
+		font-size: 22px;
+		margin: 30px 0 25px 0;
+	}
+	#presta p {
+		padding: 0px;
+		font-size:18px;
+	}
+	#presta .logo-cms  {
+		background: url('../images/sep_violet.png') no-repeat top center;
+		margin: 20px -15px;
+		padding-top: 25px;
+		text-align: center;
+	}
+	#presta .logo-cms a {
+		margin: 0 10px;
+		width: auto;
+		height:74px;
+		overflow:hidden;
+		
+	}
+	#presta .logo-cms a:first-child { margin: 0 }
+
+	
+#blog .blog {
+	margin: 0 0 20px 0;
+	overflow: hidden;
+}
+	#blog .blog .date_value {
+		color: #757aaa;
+		display: block;
+		font-family: 'MuseoSans500';
+		font-size: 16px;
+		margin: 0 0 20px 0;
+	}	
+	#blog .blog img {
+		float: left;
+		width: 170px;
+		margin-right:20px;
+	}	
+	#blog .blog h3 {
+		float: right;
+		font-family: 'liberation_serifitalic';
+		font-size: 24px;
+		margin: 0 0 15px 0;
+		padding: 0px;
+		width: 360px;
+	}	
+		#blog h3 a {
+			color: #333;
+		}
+		#blog h3 a:hover {
+			color: #757aaa;
+			text-decoration:none;
+		}
+	#blog .blog p {
+		color: #666;
+		float: right;
+		font-size: 16px;
+		margin: 0;
+		padding: 0px;
+		width: 360px;
+	}
+@media (max-width: 1200px) {
+	#blog .blog h3,	
+	#blog .blog p {
+		width: 260px;
+	}
+	#blog .blog p {
+		font-size: 14px;
+	}
+}
+			
+@media (max-width: 992px) {
+	#blog .blog {
+		width: 50%;
+		float: left;
+		text-align: center
+	}
+		#blog .blog  img{
+			float: none;
+			width: 330px;
+		}
+		#blog .blog h3,	
+		#blog .blog p {
+			float: none;
+			padding: 0;
+			width: 100%;
+		}
+}
+
+@media (max-width: 768px) {
+	#blog .blog {
+		float: left;
+		padding: 0 20px;
+		text-align: left;
+		width: 100%;
+	}
+		#blog .blog img {
+			width: 100%;
+		}
+}
+	
+#flux {
+	background: #ededed;
+	padding: 20px 0; 
+}	
+	#flux section h5 {
+		border-bottom: 2px solid #e7e9ef;
+		color: #ccc;
+		font-family: "MuseoSans700";
+		font-size: 36px;
+		margin: 5px 0 20px 0;	
+		padding: 10px 0;
+	}
+	#flux #blog {
+		
+	}
+	
+	#flux #twitter .tweet {
+		background: #fff;
+		border: 1px solid #e7e9ef;
+		padding: 17px;
+		margin: 6px 0 0 0;
+		overflow: hidden;
+		position: relative;
+		transition: all 0.3s;
+	}
+	#flux #twitter .boutonfollow {
+		padding: 17px;
+		text-align:right;
+	}
+	#flux #twitter .tweet:hover { background: #f7f7f7; box-shadow: 0 0 20px 0 #ddd; transform: translate(10px, 0) }
+		#flux #twitter .tweet .img {
+			float: left;
+			margin: 0 5% 0 0;
+			width: 10%
+		}
+		#flux #twitter .tweet .tweet-content {
+			float: left;
+			width: 85%;
+			font-size:16px;
+		}
+			#flux #twitter .tweet .tweet-content span {
+				float: left;
+			}
+			#flux #twitter .tweet .tweet-content .account { margin: 0 0 0 10px; color: #666 }
+			#flux #twitter .tweet .tweet-content .text { width: 100% }
+		#flux #twitter .tweet .retweet {
+			bottom: 5px;
+			color: #2dbeba;
+			font-size: 12px;
+			font-style: italic;
+			position: absolute;
+			right: 10px;	
+		}
+			
+@media (max-width: 1200px) {
+	#slider .flexslider {
+		margin: 10px 0 -55px 0;
+	}
+	#slider .slide-desc {
+		padding-top: 40px;
+	}
+}
+			
+@media (max-width: 992px) {
+	#slider .flexslider {
+		margin: 10px 0 -40px 0;
+	}
+		#slider .slide-desc {
+			padding-top: 0;
+		}
+		#slider .slide-img {
+			margin: 0;
+		}
+		#slider .flex-control-nav {
+			margin: -30px 0 0 10px
+		}
+}
+
+@media (max-width: 768px) {
+	#slider .flexslider {
+		margin: 10px 0 -40px 0;
+	}
+		#slider .slide-desc h3 {
+			display: block;
+			text-align: center
+		}
+		#slider .slide-desc a {
+			margin: 15px 0 0 0;
+			width: 100%
+		}
+		#slider .slide-img {
+			margin: 20px 0 0 0;
+		}
+		#slider .flex-control-nav {
+			margin: 0 0 0 10px
+		}
+	
+	#agence p a {
+		margin: 10px 0 0 0;
+		width: 100%;
+	}
+	
+	#domaines h3,
+	#presta h3 {
+		margin: 10px 0;
+	}
+	#presta {
+		text-align: center;
+	}
+		#presta .mask		{
+			margin: 40px auto 0 auto;
+		}
+		#presta .logo-cms img {
+			float: none;
+			display: block;
+			margin: 10px auto;
+		}
+		#presta .logo-cms img:first-child { margin: 20px auto 10px auto }
+}
+
+@media (max-width: 420px) {
+	#flux #twitter .tweet .img {
+		width: 15%
+	}
+	#flux #twitter .tweet .tweet-content {
+		width: 80%;
+	}
+}
+
+
+		
+	
+	
+/* AGENCE
+***************************************/
+
+#souscontenu > div, #fondgris > div {
+	font-size: 16px;
+	padding: 30px 0;
+}
+	#souscontenu .gris {	background: #ededed }
+	#souscontenu .violet { background: #757aaa }
+	#souscontenu .noir {	background: url('../images/bg_footer_link.png') }
+
+	#fondgris h3 {
+		font-size: 22px;
+		font-family:"MuseoSans500";
+		margin-bottom: 25px;
+		color:#7376a7;
+	}
+	.gris ul, #fondgris ul {
+    -webkit-padding-start: 0px;
+    list-style-position: outside;
+    padding:0px 0px 0px 15px!important;
+    margin-bottom:25px;
+}
+	.gris ul li, #fondgris ul li {
+	padding-left:20px;
+}
+	#fondgris p {
+	margin:0px 0px 25px 0px;
+}
+	#souscontenu h3 {
+		color: #fff;		
+		font-size: 22px;		
+		text-align: center;
+		font-family:"MuseoSans500";
+		min-height:47px;
+	}	
+	#souscontenu .gris h3 { color: #292929 }
+	#souscontenu .violet,
+	#souscontenu .noir, #souscontenu .noir h3 { color: #fff }
+
+	#souscontenu .container .partenaires > div {
+		background: url('../images/bg_noir.png');
+		float: left;
+		padding: 15px;
+		height: 400px;
+		margin-left: 2%;
+		width: 23%;
+	}
+		#souscontenu .container .partenaires > div:first-child { margin-left: 0 }
+			
+@media (max-width: 992px) {
+	#souscontenu .container .partenaires > div {
+		height: 350px;
+		margin: 1%;
+		width: 48%;
+	}
+	#souscontenu .container .partenaires > div:first-child { margin: 1%; }
+}
+
+@media (max-width: 768px) {
+	#souscontenu .container .partenaires > div {
+		height: auto;
+		margin: 10px 0;
+		width: 100%;
+	}
+	#souscontenu .container .partenaires > div:first-child { margin: 10px 0 }
+}
+
+	
+	
+/* SOLUTIONS
+***************************************/
+#contenu .solutions > div {
+
+}
+#contenu .solutions > div > div {
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.1); 
+	height: 520px;
+	margin: 0 0 25px 0;
+	padding: 25px 15px;
+	position: relative;
+	text-align: center;
+	transition: all 0.4s ease 0s;
+	width: 100%;	
+}
+#contenu .solutions > div:hover > div { box-shadow: 0; background: #7376a7; color: #fff }
+	#contenu .solutions > div  img {
+		border-radius: 50%;
+		display: block;
+		margin: 0 auto;
+	}
+	#contenu .solutions > div  h3 {
+		font-family: "MuseoSans500";
+		font-size: 22px;
+		font-weight: normal;
+		margin: 30px 0 0 0;
+	}
+	#contenu .solutions > div  p {
+		padding: 0 10px;
+	}
+	#contenu .solutions > div  a {
+		bottom: 15px;
+		color: #7b62a1;
+		font-family: "MuseoSans700";
+		font-size: 16px;
+		left: 0;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+	}
+	#contenu .solutions > div:hover a { color: #fff }
+	
+	
+	
+/* Détails 
+************/
+
+#contenu .round img {
+	border-radius: 50%;
+    display: block;
+    margin: 30px auto 20px auto;
+	width: 80%;
+}
+	#contenu .notitle {
+		margin: 46px 0 0 0;
+	}
+
+#souscontenu h4, #fondgris h4 {
+	color: #333;
+	font-family: "MuseoSans500";
+	margin: 35px 0 25px 0;
+	font-size: 22px;
+}
+#fondgris h2 {
+	font-family: "liberation_serifitalic";
+	font-size:28px;
+	margin-bottom:25px;
+}
+
+#souscontenu .bloc > div {
+	height: 420px;
+}
+	#souscontenu  .bloc a {
+		color: #fff;
+	}
+
+
+
+/* REFERENCES
+***************************************/
+#contenu .references  .list > div {
+	height: 284px;
+}
+#contenu .references  .list > div > div {
+	background: #eeeeee;
+	position: relative;
+	margin: 15px 0;
+}
+	#contenu .references img {
+		display: block;
+		width: 100%;
+	}
+	#contenu .references h3 {
+		color: #333;
+		font-size: 16px;
+		font-family: "MuseoSans300";
+		font-weight: normal;
+		margin: 0;
+		padding: 20px 0;
+		position: relative;
+		text-align: center;
+		z-index:10;
+	}
+	#contenu .references .over {
+		background: url('../images/bg_violet.png');
+		bottom: 0;
+		color: #fff;
+		opacity: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 0;
+		transition: all 0.3s ease 0s;
+		z-index: 9;
+	}
+		#contenu .references .over a  {
+			background: #fff;
+			color: #000;
+			display: block;
+			margin: 10px auto 0 auto;
+			padding: 10px 15px;		
+			width: 120px;
+		}
+	#contenu .moreProducts {
+		background: #292929;
+		color: #fff;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	#contenu .references .list > div:hover .over { opacity: 1; padding-top: 60px; }
+	#contenu .references .list > div:hover h3 { color: #fff; font-weight: bold; }
+	#contenu .references .list > div:hover p { font-weight: bold; }
+
+	
+@media (max-width: 768px) {
+	#contenu .references  .list > div {
+		height:auto;
+	}
+	#contenu .references .over {	
+		background: none;
+		display: block;
+		opacity: 1;
+	}
+		#contenu .references .list > div:hover h3 {
+			color: #000;
+			font-weight: normal;
+		}
+		#contenu .references .over a {
+			height: 100%;
+			opacity: 0;
+			width: 100%;
+		}
+		#contenu .references .over p, 
+		#contenu .references .over h3 {	
+			display: none;
+		}
+}
+
+@media (max-width: 450px) {
+	#contenu .references  .list > div {
+		width: 100%;
+	}
+}
+
+
+/* Détails 
+************/
+#contenu .reference header, #contenu .articleblog header  {
+	border-bottom: 6px solid #d4d4d4;
+	clear: both;
+	margin: 20px 0 30px 0;
+	padding: 0 0 30px 0;
+	overflow: hidden;
+}
+	#contenu .reference .retour  {
+		background: #7376a7 url('../images/grid.png') no-repeat 10px 50%;
+		color: #fff;
+		font-family: 'MuseoSans700';
+		font-size: 16px;
+		height: 57px;
+		line-height: 57px;
+		margin: 20px 0 0 0;
+		padding: 0 10px 0 35px;
+		text-transform: uppercase;
+		float: left;
+		width: 56px;
+	}
+	@media (max-width: 840px) {
+	}
+		
+	#contenu .reference header div a {
+		background: url('../images/bt_prec_ref.png') no-repeat;
+		display: block;
+		height: 77px;
+		width: 77px;
+	}
+	#contenu .reference header div:last-child a { background: url('../images/bt_suiv_ref.png') no-repeat; float: right }
+	#contenu .reference header div h1 { margin: 0; line-height: 77px; }
+	#contenu .reference header div h2 { margin: 0; font-size:21px; color:#666; font-family:'MuseoSans300'; font-weight:normal; }
+	
+	@media (max-width: 840px) {
+		#contenu .reference .back, #contenu .reference .autresref {
+		display:none; }
+		#contenu .reference header div h2 {
+			margin:15px 0;
+			font-size:17px; }
+		#contenu .reference header {
+			margin:0;
+			padding:0; }
+		#contenu .reference header > div.title {
+			margin:30px 0!important;
+		}
+	}
+
+#contenu .reference .sidebar {
+	color: #666;
+	font-family: 'MuseoSans300';
+	font-size: 16px;
+	line-height: 30px;
+}	
+	#contenu .reference .sidebar h3 {
+		color: #777aab;
+		font-family: 'MuseoSans700';
+		font-size: 18px;
+		font-weight: normal;
+	}
+	#contenu .reference .sidebar p {
+		margin: 0 0 30px 0;
+	}
+	#contenu .reference .sidebar .sitelink a {
+		background: #292929;
+		color: #fff;
+		display: block;
+		padding: 10px 15px;
+		text-align: center;
+		width: 100%;
+	}
+	#contenu .reference .sidebar {
+		color: #666;
+		font-family: 'MuseoSans300';
+		font-size: 16px;
+		line-height: 30px;
+	}	
+#contenu .reference .twitter, 
+#contenu .reference .facebook, 
+#contenu .reference .pinterest {
+	border: 3px solid #e7e7e7;
+	display: block;
+	float: left;
+	height: 42px;
+	margin: 0 0 0 5%;
+	width: 30%;
+}
+#contenu .reference .twitter {margin: 0}
+	#contenu .reference .twitter a, 
+	#contenu .reference .facebook a, 
+	#contenu .reference .pinterest a {
+		display: block;
+		height: 100%;
+		width: 100%;
+	}
+	#contenu .reference .twitter a { background: url('../images/bt_tw_ref.png') center center no-repeat }
+	#contenu .reference .facebook a { background: url('../images/bt_fb_ref.png') center center no-repeat }
+	#contenu .reference .pinterest a { background: url('../images/bt_pin_ref.png') center center no-repeat }
+	#contenu .reference .slider img {
+		/*height: 580px;
+		width: 870px;*/
+	}
+	#contenu .reference .slider .flex-control-paging {
+		float: right;
+	}
+	#contenu .reference .slider .flex-direction-nav {
+		display: none;
+	}
+#fondgris {
+	background: #ededed;
+	color: #333;
+}
+#fondgris .container .col-lg-6, #fondgris .container .col-sm-6, #fondgris .container .col-xs-12 {
+	}
+#contenu .gris {	
+	background: #ededed;
+	color: #333;
+	margin-bottom: -20px;
+	padding-bottom: 20px;
+}	
+	#contenu .gris .container > div  {	
+	}	
+	#contenu .gris h3 {
+		font-family: 'MuseoSans700';
+		font-size: 24px;
+		font-weight: normal;
+		padding: 20px 0;
+	}
+	#contenu .gris .contexte {
+		font-family: 'liberation_serifitalic';
+		font-size: 22px;
+		line-height: 30px;
+	}
+	
+	#contenu .gris ul {
+    -webkit-padding-start: 0px;
+}
+
+#souscontenu .similaires > div > div {
+	background: #eeeeee;
+	position: relative;
+	margin: 15px 0;
+}
+	#souscontenu .similaires img {
+		display: block;
+		width: 100%;
+	}
+	#souscontenu .similaires h3 {
+		color: #333;
+		font-size: 16px;
+		font-family: "MuseoSans300";
+		font-weight: normal;
+		margin: 0;
+		padding: 20px 0;
+		position: relative;
+		text-align: center;
+		z-index:10;
+	}
+	#souscontenu .similaires .over {
+		background: url('../images/bg_violet.png');
+		bottom: 0;
+		color: #fff;
+		opacity: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 0;
+		transition: all 0.3s ease 0s;
+		z-index: 9;
+	}
+		#souscontenu .similaires .over a  {
+			background: #fff;
+			color: #000;
+			display: block;
+			margin: 10px auto 0 auto;
+			padding: 10px 15px;		
+			width: 120px;
+		}
+	#souscontenu .similaires > div:hover .over { opacity: 1; padding-top: 90px; }
+	#souscontenu .similaires > div:hover h3 { color: #fff; font-weight: bold; }
+	#souscontenu .similaires > div:hover p { font-weight: bold; }
+	
+	#souscontenu .marques h3 {
+		border-bottom: 6px solid #d4d4d4;
+		color: #ccc;
+		font-family: "MuseoSans700";
+		font-size: 48px;
+		margin: 25px 0;
+		padding: 0 0 15px 0;
+		text-align: center;
+	}
+	#souscontenu .marques .custommarques {
+		background: #ccc;
+		border-bottom: 1px solid #d4d4d4;
+		border-right: 1px solid #d4d4d4;
+		overflow: hidden;
+	}
+		#souscontenu .marques .custommarques div {
+			background: #d4d4d4;
+			padding: 1px 0 0 1px;
+			overflow: hidden;
+		}
+			#souscontenu .marques img {
+				float: left;
+				transition: all 0.3s ease 0s;
+				width: 100%;
+			}
+			#souscontenu .marques img:hover {
+				transform: scale(0.9);
+			}
+
+.clickable-block {
+	cursor: pointer;
+}
+	
+@media (max-width: 992px) {
+	#contenu .reference .sidebar .sitelink a {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 768px) {
+	#contenu .reference header  {
+		position: relative;
+		padding: 0;
+	}
+		#contenu .reference  .retour {
+			margin-left: 0;
+			text-align: center;
+			width: 100%;
+		}
+		#contenu .reference header > div:first-child {
+			background: #777aab url('../images/bt_prec_ref.png') no-repeat center center;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 49%;
+		}
+			#contenu .reference header > div:first-child a { background: none; height: 57px; width: 100%; }
+		#contenu .reference header > div:last-child {
+			background: #777aab url('../images/bt_suiv_ref.png') no-repeat center center;
+			
+			min-height: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 49%;	
+		}
+			#contenu .reference header > div:last-child a { background: none; height: 57px; width: 100% }
+		#contenu .reference header > div.title {
+			margin: 90px 0 0 0;
+		}
+			#contenu .reference header > div h1 {
+				font-size: 36px;
+				line-height: 40px;
+			}
+	#contenu .reference .sidebar {
+		text-align: center;
+		margin: 0 0 25px 0;
+	}
+		#contenu .reference .sidebar .sitelink a {
+			font-size: 16px;
+		}
+}
+
+
+/* EQUIPE
+***************************************/
+#contenu .equipe {padding-left: 15px}
+#contenu .equipe .membre {
+	color: #fff;
+	display: block; 
+	padding-left: 0;
+	margin: 0 0 20px 0
+}
+#contenu .equipe .membre.stared { float: left; width: 50% }
+	#contenu .equipe .color { height: 435px; overflow: hidden; position: relative }
+	#contenu .equipe .color0 { background: #757aaa }
+	#contenu .equipe .color1 { background: #68bac7 }
+	#contenu .equipe .color2 { background: #64bc94 }
+	#contenu .equipe .color3 { background: #ff9797 }
+	#contenu .equipe .color4 { background: #ffb94b }
+	#contenu .equipe .over {
+		font-family: 'liberation_serifitalic';
+		font-size: 18px;
+		height: 435px;
+		opacity: 0;
+		padding: 25px 15px;
+		transition: all 0.3s ease 0s;
+	}
+	#contenu .equipe .membre:not(.stared) .over {
+		position: absolute;
+		top: 0;
+		z-index:10;
+	}
+	#contenu .equipe .membre:hover .over,
+	#contenu .equipe .stared .over { opacity: 1 }
+		#contenu .equipe .over button {
+			background: none;
+			bottom: 15px;
+			border: 0;
+			font-family: 'MuseoSans500';
+			font-size: 16px;
+			left: 15px;	
+			margin: 0;
+			padding: 0;
+			position: absolute;
+		}
+	#contenu .equipe .info {
+		font-family: 'liberation_serifitalic';
+		font-size: 20px;
+		padding: 0;
+		text-align: center;
+	}
+	#contenu .equipe .membre.stared .info { margin: 0 0 0 -15px; padding: 0 0 0 15px; float: right }
+	#contenu .equipe .membre.stared0 .info { padding: 0 0 0 15px; float: right }
+		#contenu .equipe .info img {
+			width: 100%
+		}
+		#contenu .equipe .info > div {
+			background: #333;
+			height: 435px;
+		}
+		#contenu .equipe .info .poste {
+			background: #333;
+			bottom: 0;
+			padding: 15px 15px 15px 0;
+			position: absolute;
+			width: 100%;
+		}
+			#contenu .equipe .info h3 {
+				height:55px;
+				font-family: 'MuseoSans500';
+				font-size: 22px;
+				margin: 0;
+				color:#fff;
+			}
+				#contenu .equipe .info span {
+					display: block;
+					font-size:16px;
+				}
+			#contenu .equipe .info h4 {
+				font-family: 'MuseoSans300';
+				font-size: 11px;
+				text-transform: uppercase;
+				margin: 0;
+			}
+	#contenu .equipe .popup {
+		display: none;
+	}
+
+.popup_bg {
+	background: url('../images/bg_noir.png');
+	display: none;
+	height: 100%;
+	left:0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+}
+	.popup_bg > div {
+		color: #fff;
+		opacity: 0;
+	}
+		.popup_bg .background {
+			background: #1c1c1c;
+			padding: 30px;
+		}
+		.popup_bg h2 {
+			font-family: 'liberation_serifitalic';
+			font-size: 30px;
+		}
+		.popup_bg h3 {
+			font-family: 'MuseoSans300';
+			font-size: 11px;
+			text-transform: uppercase;
+			margin: 0;
+		}
+		.popup_bg h4 {
+			font-family: 'MuseoSans700';
+			font-size: 24px
+		}
+		.popup_bg p {
+			font-family: 'liberation_serifitalic';
+		}
+
+@media (max-width: 1200px) {
+	#contenu .equipe .color,
+	#contenu .equipe .info > div {
+		height: 375px;
+	}
+		#contenu .equipe .over {
+			font-size: 17px;
+			height: 375px;
+			line-height: 21px;
+		}
+}
+
+@media (max-width: 992px) {
+	#contenu .equipe .membre.stared { width: 100% }
+}
+
+
+@media (max-width: 768px) {
+	#contenu .equipe {padding-left: 0}
+	#contenu .equipe .color, 
+	#contenu .equipe .over,
+	#contenu .equipe .info > div,
+	#contenu .equipe .info h3 {
+		height: auto;
+	}
+	#contenu .equipe .over {
+		opacity: 1;
+	}
+	#contenu .equipe .membre:not(.stared) .over {
+		position: inherit;
+	}
+	#contenu .equipe .info .poste {
+		padding: 15px 0;
+	}
+	#contenu .equipe .membre {
+		padding: 0;
+	}
+	#contenu .equipe .membre.stared .info {
+		float: left;
+		margin: 0;
+		padding: 0;
+	}
+	#contenu .equipe .over button {
+		bottom: -5px;
+		left: 0;
+		margin: 20px 0 0 0;
+		padding: 0;
+		position: relative;
+	}
+}	
+	#contenu .blogpage .article {
+		background: #eee;	
+		padding: 50px;
+		border: 1px solid #fff;
+	}
+	#contenu .blogpage .col-lg-12 {
+		height: 695px;
+	}
+	#contenu .blogpage .col-lg-6 {
+		height: 525px;	
+	}
+	#contenu .blogpage .article a {
+		color: #333;
+	}
+	#contenu .blogpage .article img {
+		width: 100%
+	}
+	#contenu .blogpage .article small {
+		color: #999;
+		margin: 0 0 10px 0;
+	}
+	#contenu .blogpage .article p {
+		color: #333;
+		margin: 0 0 10px 0;
+	}
+	#contenu .blogpage .article a.readmore {
+		color: #000;
+		float: right;
+	}
+		#contenu .article_details img {
+			display: block;
+			height: auto;
+			margin: 0 auto;
+			max-width: 100%;
+		}
+#contenu #userForm .adresses {
+	margin-top: 50px
+}
+#contenu #userForm .formContainer {
+	box-shadow: 0 0 10px #ccc;
+	margin-top: 20px;
+	padding: 30px 20px;
+}
+#contenu #userForm h1 {
+	border-bottom: 6px solid #d4d4d4;
+	padding-bottom: 20px;
+	margin-bottom: 50px;
+}
+	#contenu #userForm .formError {
+		font-size: 14px;
+	}
+	#contenu #userForm .formRed {
+		color: #cf4d4d;
+		padding-left: 30px;
+	}
+	#contenu #userForm .formContainer label {
+		font-family: 'liberation_serifitalic';
+		font-size: 20px;
+		font-weight: normal
+	}
+		#contenu #userForm .formContainer label strong{
+			font-weight: normal;
+			font-size: 14px;
+		}
+	#contenu #userForm .formContainer .rsform-block-message > .col-sm-10 {
+		padding-left: 11px;
+	}
+	#contenu #userForm .formContainer .rsform-submit-button {
+		background: #333;
+		color: #fff;
+		float: right;
+		margin-right: 15px;
+	}
+
+@media (max-width: 768px) {
+	#contenu #userForm .adresses > div {
+		float: none;
+		margin: 15px auto 25px auto;
+		width: 260px;
+	}
+}
+#souscontenu .actus a, #souscontenu .actus a:hover {
+	color:#ffffff;
+}
+#souscontenu .actus span.mod-articles-category-date:before {
+	content:'- Publié le ';
+}
+#souscontenu .actus .mod-articles-category-date {
+	color:#c0c0c0;	
+	font-size:13px;
+}
+#contenu .plusactus {
+	height:100px;
+}
+#contenu .plusactus div a {
+	background: url('../images/bt_prec_ref.png') no-repeat;
+	display: block;
+	height: 77px;
+	width: 77px;
+}
+#contenu .plusactus div:last-child a {
+	background: url('../images/bt_suiv_ref.png') no-repeat;
+	float: right;
+}
+}
