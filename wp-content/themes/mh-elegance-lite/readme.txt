@@ -3,7 +3,7 @@ Theme URI: http://www.mhthemes.com/themes/mh/elegance-lite/
 Tags: Business, Corporate, Blog, Responsive
 Requires at least: 4.0
 Tested up to: 4.2.2
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 MH Elegance lite WordPress Theme, Copyright 2014-2015 MH Themes
@@ -56,6 +56,11 @@ Overview: http://demo.mhthemes.com/elegance/credits/
 ==================================
 Changelog
 ==================================
+
+= v1.1.3 07-07-2015 =
+* Fixed contextual translation strings
+* Updated german translation
+* Updated translation files
 
 = v1.1.2 29-06-2015 =
 * Updated constructor method for WP_Widget

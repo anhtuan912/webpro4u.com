@@ -5,7 +5,7 @@
 class mh_elegance_lite_news_widget extends WP_Widget {
     function __construct() {
 		parent::__construct(
-			'mh_news_widget', esc_html_x('MH News Widget (Front Page)', 'mh-elegance-lite'),
+			'mh_news_widget', esc_html_x('MH News Widget (Front Page)', 'widget name', 'mh-elegance-lite'),
 			array('classname' => 'mh_news_widget', 'description' => esc_html__('Widget to display news from blog.', 'mh-elegance-lite'))
 		);
 	}

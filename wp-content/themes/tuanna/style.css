@@ -118,3 +118,7 @@ Tags: two-columns, right-sidebar, responsive-layout, custom-background, custom-c
     right: 0;
 }
 
+.nav > li > a{
+    padding: 10px 13px;
+}
+

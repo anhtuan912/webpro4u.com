@@ -79,7 +79,7 @@ function stickyMenu() {
 		jQuery('.menu_mobile').on('click', function(e) {
 			e.preventDefault();
 			
-			$button = $(this);
+			$button = jQuery(this);
 			$navigation = $button.siblings('nav');
 			$socialBlock = $button.siblings('nav');
 		

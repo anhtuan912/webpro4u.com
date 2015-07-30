@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: MH Elegance lite v1.0.2\n"
+"Project-Id-Version: MH Elegance lite v1.1.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-12-21 10:13+0100\n"
+"PO-Revision-Date: 2015-06-30 11:23+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -93,34 +93,34 @@ msgid "Tagged as:"
 msgstr ""
 
 # @ mh-elegance-lite
-#: functions.php:40
+#: functions.php:36
 msgid "Main Navigation"
 msgstr ""
 
 # @ mh-elegance-lite
-#: functions.php:77
+#: functions.php:89
 msgid "Sidebar"
 msgstr ""
 
 # @ mh-elegance-lite
-#: functions.php:77
+#: functions.php:89
 msgid "Sidebar on Posts/Pages."
 msgstr ""
 
 # @ mh-elegance-lite
-#: functions.php:78 functions.php:79
+#: functions.php:90 functions.php:91
 #, php-format
 msgctxt "widget area name"
 msgid "Home %d"
 msgstr ""
 
 # @ mh-elegance-lite
-#: functions.php:78
+#: functions.php:90
 msgid "Widget Area on Front Page above Content."
 msgstr ""
 
 # @ mh-elegance-lite
-#: functions.php:79
+#: functions.php:91
 msgid "Widget Area on Front Page below Content."
 msgstr ""
 
@@ -231,7 +231,7 @@ msgid "Website"
 msgstr ""
 
 # @ mh-elegance-lite
-#: admin/admin.php:42 includes/mh-options.php:29
+#: admin/admin.php:39 includes/mh-options.php:29
 msgid "Theme Options"
 msgstr ""
 
@@ -256,88 +256,32 @@ msgid "Custom Excerpt More-Text"
 msgstr ""
 
 # @ mh-elegance-lite
-#: includes/widgets/mh-facebook-likebox.php:45
-#: includes/widgets/mh-news-widget.php:54
+#: includes/widgets/mh-news-widget.php:56
 msgid "Title:"
 msgstr ""
 
 # @ mh-elegance-lite
-#: includes/widgets/mh-facebook-likebox.php:7
-msgid "Widget to display a Facebook likebox in your sidebar."
-msgstr ""
-
-# @ mh-elegance-lite
-#: includes/widgets/mh-facebook-likebox.php:8
-msgid "MH Facebook Likebox"
-msgstr ""
-
-# @ mh-elegance-lite
-#: includes/widgets/mh-facebook-likebox.php:41
-msgid "Follow on Facebook"
-msgstr ""
-
-# @ mh-elegance-lite
-#: includes/widgets/mh-facebook-likebox.php:49
-msgid "Facebook Page URL:"
-msgstr ""
-
-# @ mh-elegance-lite
-#: includes/widgets/mh-facebook-likebox.php:53
-msgid "Width:"
-msgstr ""
-
-# @ mh-elegance-lite
-#: includes/widgets/mh-facebook-likebox.php:57
-msgid "Height:"
-msgstr ""
-
-# @ mh-elegance-lite
-#: includes/widgets/mh-facebook-likebox.php:62
-msgid "Show Faces"
-msgstr ""
-
-# @ mh-elegance-lite
-#: includes/widgets/mh-facebook-likebox.php:66
-msgid "Show Stream"
-msgstr ""
-
-# @ mh-elegance-lite
-#: includes/widgets/mh-facebook-likebox.php:70
-msgid "Show Header"
-msgstr ""
-
-# @ mh-elegance-lite
-#: includes/widgets/mh-facebook-likebox.php:74
-msgid "Show Border"
-msgstr ""
-
-# @ mh-elegance-lite
-#: includes/widgets/mh-news-widget.php:7
+#: includes/widgets/mh-news-widget.php:9
 msgid "Widget to display news from blog."
 msgstr ""
 
 # @ mh-elegance-lite
-#: includes/widgets/mh-news-widget.php:8
-msgid "MH News Widget (Front Page)"
-msgstr ""
-
-# @ mh-elegance-lite
-#: includes/widgets/mh-news-widget.php:35
+#: includes/widgets/mh-news-widget.php:37
 msgid "Read more"
 msgstr ""
 
 # @ mh-elegance-lite
-#: includes/widgets/mh-news-widget.php:58
+#: includes/widgets/mh-news-widget.php:60
 msgid "Select a Category:"
 msgstr ""
 
 # @ mh-elegance-lite
-#: includes/widgets/mh-news-widget.php:60
+#: includes/widgets/mh-news-widget.php:62
 msgid "All"
 msgstr ""
 
 # @ mh-elegance-lite
-#: includes/widgets/mh-news-widget.php:73
+#: includes/widgets/mh-news-widget.php:75
 msgid "Skip Posts (Offset):"
 msgstr ""
 
@@ -384,33 +328,18 @@ msgid "Rate this theme"
 msgstr ""
 
 # @ mh-elegance-lite
-#: admin/admin.php:24
-msgid "Facebook"
-msgstr ""
-
-# @ mh-elegance-lite
-#: admin/admin.php:25
-msgid "Twitter"
-msgstr ""
-
-# @ mh-elegance-lite
-#: admin/admin.php:26
-msgid "YouTube"
-msgstr ""
-
-# @ mh-elegance-lite
-#: admin/admin.php:31
+#: admin/admin.php:28
 #, php-format
 msgid "Getting Started with %s"
 msgstr ""
 
 # @ mh-elegance-lite
-#: admin/admin.php:35
+#: admin/admin.php:32
 msgid "Theme Documentation"
 msgstr ""
 
 # @ mh-elegance-lite
-#: admin/admin.php:36
+#: admin/admin.php:33
 #, php-format
 msgid ""
 "Need any help to setup and configure %s? Please have a look at the "
@@ -419,12 +348,12 @@ msgid ""
 msgstr ""
 
 # @ mh-elegance-lite
-#: admin/admin.php:38
+#: admin/admin.php:35
 msgid "Visit Documentation"
 msgstr ""
 
 # @ mh-elegance-lite
-#: admin/admin.php:43
+#: admin/admin.php:40
 #, php-format
 msgid ""
 "%s supports the Theme Customizer for all theme settings. Click \"Customize "
@@ -432,17 +361,17 @@ msgid ""
 msgstr ""
 
 # @ mh-elegance-lite
-#: admin/admin.php:45
+#: admin/admin.php:42
 msgid "Customize Theme"
 msgstr ""
 
 # @ mh-elegance-lite
-#: admin/admin.php:49 includes/mh-options.php:34
+#: admin/admin.php:46 includes/mh-options.php:34
 msgid "Upgrade to Premium"
 msgstr ""
 
 # @ mh-elegance-lite
-#: admin/admin.php:50
+#: admin/admin.php:47
 msgid ""
 "Need more features and options? Check out the Premium Version of this theme "
 "which comes with additional features and advanced customization options for "
@@ -450,19 +379,19 @@ msgid ""
 msgstr ""
 
 # @ mh-elegance-lite
-#: admin/admin.php:52 includes/mh-options.php:50
+#: admin/admin.php:49 includes/mh-options.php:50
 msgid "Learn more about the Premium Version"
 msgstr ""
 
 # @ mh-elegance-lite
-#: admin/admin.php:63
+#: admin/admin.php:60
 #, php-format
 msgid ""
 "%1s is proudly brought to you by %2s. If you like this WordPress theme, %3s."
 msgstr ""
 
 # @ mh-elegance-lite
-#: admin/admin.php:66
+#: admin/admin.php:63
 msgid "rate it"
 msgstr ""
 
@@ -479,7 +408,7 @@ msgid ""
 msgstr ""
 
 # @ mh-elegance-lite
-#: includes/widgets/mh-news-widget.php:77
+#: includes/widgets/mh-news-widget.php:79
 msgid ""
 "This is the lite version of this widget with only basic features. If you "
 "need more features and options, you can upgrade to the premium version of "
@@ -487,17 +416,18 @@ msgid ""
 msgstr ""
 
 # @ mh-elegance-lite
-#: admin/admin.php:57
+#: admin/admin.php:54
 msgid "Theme Screenshot"
-msgstr ""
-
-# @ mh-elegance-lite
-#: content.php:11
-msgid "No Picture"
 msgstr ""
 
 # @ mh-elegance-lite
 #: footer.php:4
 #, php-format
 msgid "Copyright &copy; %1$s | MH Elegance <em>lite</em> by %2$s."
+msgstr ""
+
+# @ mh-elegance-lite
+#: includes/widgets/mh-news-widget.php:8
+msgctxt "widget name"
+msgid "MH News Widget (Front Page)"
 msgstr ""

@@ -1,10 +1,40 @@
 <?
+define('DIR', '/webpro4u.com/');
+define('BASE_PATH',__DIR__.'/');
+// URI, SEGS, SEGn
+$_REQUEST_URI = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/'); define('URI', DIR == '/' ? $_REQUEST_URI : substr($_REQUEST_URI, strlen(trim(DIR, '/').'/'))); $_URI_SEGMENTS = explode('/', URI); define('SEGS', empty($_URI_SEGMENTS) ? 0 : count($_URI_SEGMENTS)); for ($i = 1; $i <= 9; $i ++) define('SEG'.$i, isset($_URI_SEGMENTS[$i - 1]) ? $_URI_SEGMENTS[$i - 1] : '');
+
+
 define('TUANNA_THEME_URL', get_template_directory_uri());
 define('TUANNA_THEME_DIR', get_template_directory());
 define('TUANNA_THEME_INC_DIR', get_template_directory().'/inc');
 define('TUANNA_THEME_WIDGET_DIR', get_template_directory().'/inc/widgets');
 
+require_once TUANNA_THEME_WIDGET_DIR.'/main.php';
+new Tuanna_Theme_Widget_Main();
+
 add_action('wp_enqueue_scripts', 'tuanna_theme_register_js');
+
+
+add_action('init','tuanna_theme_register_menus');
+
+function tuanna_theme_register_menus( ){
+    register_nav_menus([
+        'top-menu' => __('Top menu'),
+        'bottom-menu' => __('Bottom menu'),
+        'mau-website-menu' => __('Mẫu các website Menu'),
+    ]);
+}
+
+// Add class active to menu item
+
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+function special_nav_class($classes, $item){
+     if( in_array('current-menu-item', $classes) ){
+             $classes[] = 'active ';
+     }
+     return $classes;
+}
 
 function tuanna_theme_register_js() {
     $jsUrl = get_template_directory_uri() . '/js';

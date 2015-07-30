@@ -1,3 +1,4 @@
+<? require_once TUANNA_THEME_INC_DIR. '/bottom-content.php'; ?>
 <footer id="liens">
     <div class="container">
         <div class="row netlinking">

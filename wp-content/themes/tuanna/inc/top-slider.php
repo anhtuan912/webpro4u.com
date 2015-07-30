@@ -5,9 +5,11 @@
                 <ul class="slides">
                     <li class="slide-container" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
                         <div class="col-lg-4 col-sm-4 col-xs-12 slide-desc">
-                            <h3>Cocolico</h3>
+                            <h3>Thiết kế website</h3>
 
-                            <p>Un design chic et sobre pour la marque de vêtements Cocolico et son site B2B dédié à l'international...</p>
+                            <p>Giao diện đẹp</p>
+                            <p>Nhanh ổn định</p>
+                            <p>Hỗ trợ hết mình.</p>
 
                             <a class="btn btn-primary btn-sm" href="http://www.antadis.com/references/34-e-commerce/462-site-b2b-cocolico.html">Voir le cas pratique</a>
                         </div>
